@@ -29,3 +29,9 @@ The visualization of results will be saved in `result_*` after training.
   year={2023}
 }
 ```
+
+## Contact
+
+If you have any questions regarding the code, please feel free to contact Lixu Wang (lixuwang2025@u.northwestern.edu) or Lingjuan Lyu (Lingjuan.Lv@sony.com).
+
+###### Copyright 2023, Sony AI, Sony Corporation of America, All rights reserved.
