@@ -15,10 +15,23 @@ Download **Digit-Five** and **PACS** from https://github.com/jindongwang/transfe
 Download the subset of **DomainNet** used in our paper from https://drive.google.com/file/d/1LDnU3el-nHoqTgnvxEZP_PxdbdBapNKP/view?usp=sharing, and place it in `./Dataset`.  
 
 # Usage
-Run the files in `scripts`.
+## Quick Start
+After installing all dependency packages, you can use the following command to run the code on PACS
+```
+python main.py --gpu $gpu_id --order 2 0 1 3 --seed 2022 \
+--aug_tau 0.5 --topk_alpha 20 --lr 0.005 --MPCL_alpha 0.5 \
+--output result_mainpaper 
+```
+## Reproduce the experiment results in the paper
+Please run all bash files in `scripts` with the following command.
+```
+cd ./scripts
+bash PACS.sh dg5.sh subdomain_net.sh
+```
 
 # Performance
-The visualization of results will be saved in `result_*` after training.
+The visualization of results will be saved in `result_*` (you can customize the file name) after training. The following table reports the experiment results of running RaTP on PACS.
+![Results](./fig/results_PACS.png)  
 
 # Citation
 ```
